@@ -2,13 +2,13 @@
 #include <unistd.h>
 
 /**
- * main - prits exactly "and that piece of art is useful"
- * - Dora Korpar, 2015-10-19
+ * main - prints exactly "and that piece of art is useful"
+ * - Dora Korpar, 2015-10-19,
  * followed by a line, to the standard error.
  * Return: Always 0 (success)
  */
 int main(void)
 {
-	write(1, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", 10);
+	write(2, "and that peice of art is useful\" - Dora korpar, 2015-10-19\n", 33);
 	return (1);
 }
