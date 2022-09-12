@@ -1,6 +1,6 @@
-#include <sdtio.h>
-#include <time.h>
 #include <stdlib.h>
+#include <time.h>
+#include <stdio.h>
 
 /**
  * main - assigns a random number to int n evertime
@@ -17,7 +17,7 @@ int main(void)
 		printf("%d is positive\n", n);
 	else if (n == 0)
 		printf("%d is zero\n", n);
-	else (n < 0)
+	else if (n < 0)
 		printf("%d is nagative\n", n);
 	return (0);
 }
