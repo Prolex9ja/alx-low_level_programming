@@ -2,7 +2,7 @@
 
 /**
  * main - prints all possible combinations of two two-digit numbers
- * Reruns: Always 0 (Success)
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
