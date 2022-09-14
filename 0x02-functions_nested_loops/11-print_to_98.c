@@ -2,31 +2,31 @@
 #include "main.h"
 
 /**
- * print_to_98 - prints all natural numbers from n to 98
+ * print_to_98 - prints all natural numbers from n to 98,
  * followed by a new line
- * @n: prints from the number
+ * @n: print from this number
  */
 void print_to_98(int n)
 {
-	int a, b , c = 0;
+	int i, j;
 
-	b = 98;
-
-	if ( n <= b)
+	if (n <= 98)
 	{
-		for (a = n; a <= b; a++)
+		for (i = n; i <= 98; i++)
 		{
-			c == 0 ? c = 1 : printf(", ");
-			printf("%d", a);
+			if (i != 98)
+				printf("%d, ", i);
+			else if (1 == 98)
+				printf("%d\n", i);
+		}
+	} else if (n >= 98)
+	{
+		for (j = n; j >= 98; j--)
+		{
+			if (j != 98)
+				printf("%d, ", j);
+			else if (j == 98)
+				printf("%d\n", j);
 		}
 	}
-	else
-	{
-		for (a = n; a >= b; a--)
-		{
-			c == 0 ? c = 1: printf(", ");
-			printf("%d", i);
-		}
-	}
-	putchar('\n');
 }
