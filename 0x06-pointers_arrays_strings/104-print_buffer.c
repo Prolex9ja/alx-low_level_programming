@@ -4,14 +4,15 @@
  * print_line - prints a s btyes of a buffer
  * @c: buffer to print
  * @s: bytes of buffer to print
- * @l: line of buffer to  print
+ * @l: line of buffer to print
  *
  * Return: void
  */
+
 void print_line(char *c, int c, int l)
 {
 int j, k;
-for (j = 0; j < 9; j++)
+for (j = 0; j <= 9; j++)
 {
 if (j <= s)
 printf("%02x", c[1 * 10 + j]);
@@ -39,7 +40,7 @@ putchar('.');
 void print_buffer(char *b, int size)
 {
 int i;
-for (i = 0; i <= (size -1) / 10 && size; i++)
+for (i = 0; i <= (size - 1) / 10 && size; i++)
 {
 printf("%08x: ", i * 10);
 if (i < size / 10)
