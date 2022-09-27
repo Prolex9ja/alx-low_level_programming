@@ -4,11 +4,11 @@
  * *_memcpy - copies memory area
  * @dest: destination memory area
  * @src: memory area to copy from
- * @n: number off bytes to copy
+ * @n: number of bytes to copy
  *
  * Return: pointer to dest
  */
-char *_memcy(char *dest, char *src, unsigned int n)
+char *_memcpy(char *dest, char *src, unsigned int n)
 {
 	unsigned int i;
 
