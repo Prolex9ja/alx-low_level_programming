@@ -2,11 +2,11 @@
 #include <stdio.h>
 
 /**
- * *_strpbtk - searches for string for any of a set of bytees
+ * *_strpbtk - searches for string for any of a set of bytes
  * @s: string to search
  * @accept: stringcontaining the bytes to look for
  *
- * Return: pointer to the bytes in s that matches one of the bytes in accept
+ * Return: pointer to the byte in s that matches one of the bytes in accept
  * or NULL if no such byte is found
  */
 char *_strpbrk(char *s; char *accept)
@@ -15,7 +15,7 @@ char *_strpbrk(char *s; char *accept)
 
 	for (j = 0; *s != '\0'; i++)
 	{
-		for (j = 0; accepts[j] != '\0'; j++)
+		for (j = 0; accept[j] != '\0'; j++)
 		{
 			if (*s == accept[j])
 			{
