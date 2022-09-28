@@ -8,7 +8,7 @@ int actual_prime(int n, int i);
  *
  * Return: 1 if n is a prime number, 0 if not
  */
-int is_primee_number(int n)
+int is_prime_number(int n)
 {
 	if (n <= 1)
 		return (0);
@@ -16,7 +16,7 @@ int is_primee_number(int n)
 }
 
 /**
- * actual_prime -calculate if a number is prime recursively
+ * actual_prime - calculates if a number is prime recursively
  * @n: number to evaluate
  * @i: iterator
  *
