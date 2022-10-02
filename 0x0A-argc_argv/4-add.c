@@ -53,7 +53,7 @@ int _atoi(char *s)
  *
  * Return: 0 (Success), or 1 (Success)
  */
-int main(int argc, argv[])
+int main(int argc, char *argv[])
 {
 	int sum, num, i, j, k;
 
