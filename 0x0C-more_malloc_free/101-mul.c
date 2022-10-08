@@ -6,7 +6,7 @@
  * is_digit - checks if a string contains a non-digit char
  * @s: string to be evaluated
  *
- * Return: 0 if a non-digit is found, 1 other
+ * Return: 0 if a non-digit is found, 1 otherwise
  */
 int is_digit(char *s)
 {
@@ -83,7 +83,6 @@ int main(int argc, char *argv[])
 		}
 		if (carry > 0)
 			result[len1 +  len2 + 1] += carry;
-
 	}
 	for (i = 0; i < len - 1; i++)
 	{
@@ -95,5 +94,6 @@ int main(int argc, char *argv[])
 	if (!a)
 		_putchar('0');
 	_putchar('\n');
+	free(result);
 	return (0);
 }
