@@ -2,9 +2,9 @@
 #include "dog.h"
 
 /**
- * _strlen - return the length of a string
+ * _strlen - returns the length of a string
  * @s: string to evaluate
- * 
+ *
  * Return: the length of the string
  */
 int _strlen(char *s)
@@ -30,7 +30,7 @@ int _strlen(char *s)
  *
  * Return: the pointer to dest
  */
-char *_strncpy(char *dest, char *src)
+char *_strcpy(char *dest, char *src)
 {
 	int len, i;
 
@@ -51,18 +51,18 @@ char *_strncpy(char *dest, char *src)
 }
 
 /**
- * new_dog: creates a new dog
+ * new_dog - creates a new dog
  * @name: name of the dog
  * @age: age of the dog
  * @owner: owner of the dog
  *
- * Return: pointer to the dog (Success), NULL otherwise
+ * Return: pointer to thenew dog (Success), NULL otherwise
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *dog;
 	int len1, len2;
-
+	
 	len1 = _strlen(name);
 	len2 = _strlen(owner);
 
